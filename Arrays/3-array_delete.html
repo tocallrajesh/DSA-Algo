@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array Delete</title>
+    <script>
+        let data = [1, 5, 78, 37, 12, 34];
+        document.write(`Before delete ${data} <br>`);      
+
+        let position = 4;
+        let newElement = 10;
+
+        for (let i = position; i < data.length - 1; i++) {
+            
+                data[i] = data[i+1];               
+           
+        }
+        data.length = data.length-1;
+        document.write("After delete  ",data);
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
