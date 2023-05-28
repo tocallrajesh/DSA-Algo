@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array Delete(specific position)</title>
+    <script>
+        let data = [1, 5, 78, 37, 12, 34];
+        let data1 = [90,54,60];
+        let data2 = [];
+        document.write(`Before merge data set1 ::  ${data} <br> data set2 ::  ${data1} <br>`);      
+
+        for (let i = 0; i < data.length ; i++) {            
+                data2[i] = data[i];        
+        }
+        for (let i = 0; i < data1.length ; i++) {            
+                data2[data2.length+1] = data1[i];        
+        }
+        document.write("After merge  ",data2);
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
