@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array search</title>
+    <script>
+        let data = [1, 5, 78, 37, 12, 34];
+        let searchItem = 12;
+        let searchIndex = undefined;       
+        
+        for (let i = 0; i < data.length ; i++) {            
+                if(data[i] == searchItem){
+                    searchIndex = i;
+                }       
+        }
+        document.write(`data set :: ${data} <br>`);
+        document.write(`searchItem ${searchItem} found in ${searchIndex} position`);      
+
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
