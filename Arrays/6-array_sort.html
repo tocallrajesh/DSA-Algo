@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sort Element in Array</title>
+    <script>    
+    let data = [31,3,10,250,540,20,89,50,76,789];
+    document.write(`Before Sort ${data} <br>`)
+        for(let i=0;i<data.length;i++){
+            for(let j=0;j<data.length;j++){
+                if(data[j] > data[j+1]){
+                    let temp = data[j];
+                    data[j] = data[j+1];
+                    data[j+1] = temp
+                }                
+            }
+        }
+        document.write(`Sorted Array ${data} `)
+    </script>
+  </head>
+  <body>
+    <h1>Array Sorting in JavaScript</h1>
+  </body>
+</html>
