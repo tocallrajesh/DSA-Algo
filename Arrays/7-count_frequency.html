@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Count the frequency of an element in an array</title>
+    
+  </head>
+  <body>
+    <h1>Problem Statement</h1>
+    <label>Count the frequency of an element in an array</label>
+    <br><br><br><br><br>
+    <script>    
+        let dataList = [31,3,3,250,20,30,30,76,76];
+        document.write(`input data set  ${dataList} <br>`)
+
+        let countFrequency = dataList.reduce((acc ,curr)=>{            
+            return acc[curr] ? ++acc[curr] : acc[curr]=1,acc
+        },{});
+        //Alternative logic
+        // let count = {}
+        // for(const datas of dataList){
+        //     count[datas] = count[datas] ? count[datas] + 1 : 1;
+        // }
+            
+        document.write(`output data set ${JSON.stringify(countFrequency)} `)
+        </script>
+  </body>
+</html>
